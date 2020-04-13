@@ -1,0 +1,56 @@
+.banner {
+  position: relative;
+  text-align: center;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text {
+    position: absolute;
+    top: 4%;
+    @include centr-position;
+  }
+
+  &__title {
+    font-size: 52px;
+    margin-bottom: 8px;
+
+    @media (max-width: 786px) {
+      font-size: 42px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 35px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 24px;
+      }
+  }
+
+  &__desc {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 30px;
+
+    @media (max-width: 786px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 18px;
+      }
+  }
+
+  &__button {
+    @include form-button;
+    position: absolute;
+    bottom: 0;
+    @include centr-position;
+  }
+}

@@ -1,0 +1,28 @@
+.partners {
+    background-color: $secondary-bg-color;
+    padding: 55px 0 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: $bottom-line;
+
+    &__button {
+        @include form-button;
+        margin-bottom: 54px;
+    }
+
+    &__text {
+        @include text-content;
+    }
+
+    &__title {
+        font-size: 26px;
+        margin-bottom: 30px;
+        
+        @media (max-width: 450px) {
+        font-size: 16px;
+      }
+    }
+
+    
+}

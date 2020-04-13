@@ -1,0 +1,15 @@
+.info { 
+    background-color: $secondary-bg-color;
+    padding: 56px 0 28px;
+    display: flex;
+    justify-content: center;   
+    border-bottom: $bottom-line;
+
+    &__list {
+        @include text-content;
+    }
+
+    &__item:not(:last-of-type) {
+        margin-bottom: 28px;
+    }
+}

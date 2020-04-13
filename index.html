@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.min.css">
+    <title>Lorem</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__burger header__burger--open">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="header__info container">
+            <a href="#" class="header__logo"><img src="img/logo.png" alt="logo"></a>
+            <nav class="header__nav nav">
+                <ul class="header__menu menu menu--mobile">
+                    <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Заказать продукцию</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link open-modal">Стать партнером</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contacts contacts">
+                <a href="#" class="contacts__instagram"></a>
+                <a href="mailto:glavsnab1@inbox.ru" class="contacts__mail"></a>
+                <a href="tel:8-925-721-03-93" class="contacns__phone">8 925 721 03 93</a>
+            </div>
+            <button class="header__button basket" aria-label="Корзина"></button>
+        </div>
+    </header>
+    <main class="main">
+        <article class="banner">
+            <picture>
+                <source srcset="img/small-banner.png" media="(max-width: 576px)">
+                <img src="img/banner.png" alt="Продукция" class="banner__img">
+            </picture>
+
+            <div class="banner__text">
+                <h1 class="banner__title">LOREMS - белее снега</h1>
+                <h3 class="banner__desc">Профессиональная и бытовая химия<br>
+                    нового поколения</h3>
+            </div>
+            <button class="banner__button">Заказать продукцию</button>
+        </article>
+        <article class="info">
+            <ul class="info__list">
+                <li class="info__item">LOREMS — это линейка многофункциональных чистящих и моющих средств
+                    профессиональной, промышленной и бытовой химии.</li>
+                <li class="info__item">Наши средства активно борются с микробами и грязью, оставаясь при этом
+                    экологически чистым и гипоаллергенным продуктом.
+                </li>
+                <li class="info__item">LOREMS - это чистота и забота о семье.
+                </li>
+                <li class="info__item">Забудьте про самые сложные и трудновыводимые пятна на одежде.<br>
+                    Больше не беспокойтесь, что моющее средство для посуды может быть опасным или вызвать аллергию.</li>
+                <li class="info__item">Не пересушивайте руки влажными салфетками, пропитанными химией.<br>
+                    Заботьтесь о себе и своей семье, выбирая безопасные и экологические продукты LOREMS.</li>
+            </ul>
+        </article>
+        <article class="partners">
+            <button class="partners__button open-modal">Хочу продавать LOREMS<br> в своем городе</button>
+            <div class="partners__text">
+                <h4 class="partners__title">Партнерская программа</h4>
+                <p>Мы стремимся продавать нашу продукцию во всех уголках России и активно развиваем сеть наших
+                    межрегиональных дилеров.
+                    Если Вы хотите стать частью нашей команды, нажмите на кнопку «хочу продавать Lorems в своём городе»,
+                    заполните анкету и в течении 24 часов МЫ свяжемся с Вами!<br>
+                    Спасибо, что Выбираете LOREMS.</p>
+            </div>
+        </article>
+        <article class="choose">
+            <h2 class="choose__title">Нас выбирают</h2>
+            <picture>
+                <source srcset="img/choose-small.png" media="(max-width: 576px)">
+                <img src="img/partners-logo.png" alt="Партнеры" class="choose__img">
+            </picture>
+
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer__icon container">
+            <img src="img/danger-logo.png" alt="Danger" class="logo__img">
+            <img src="img/water-logo.png" alt="water" class="logo__img">
+            <img src="img/basket-logo.png" alt="garbige basket" class="logo__img">
+            <img src="img/turkey-logo.png" alt="Turkey" class="logo__img">
+            <img src="img/tuv-logo.png" alt="TUV" class="logo__img">
+            <img src="img/feruze.png" alt="Firuze" class="logo__img">
+        </div>
+        <div class="footer__info container">
+            <a href="#" class="footer__logo"><img src="img/logo.png" alt="logo"></a>
+            <nav class="footer__nav">
+                <ul class="footer__menu menu">
+                    <li class="menu__item footer__menu-item"><a href="#" class="menu__link">О нас</a></li>
+                    <li class="menu__item footer__menu-item"><a href="#" class="menu__link">Заказать продукцию</a></li>
+                    <li class="menu__item footer__menu-item"><a href="#" class="menu__link">Стать партнером</a></li>
+                    <li class="menu__item footer__menu-item"><a href="#" class="menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer__contacts contacts">
+                <a href="#" class="contacts__instagram"></a>
+                <a href="mailto:glavsnab1@inbox.ru" class="contacts__mail"></a>
+                <a href="tel:8-925-721-03-93" class="contacns__phone">8 925 721 03 93</a>
+            </div>
+        </div>
+        <div class="footer__text">
+            <p>Заказчик: ООО "ГлавСнаб", 105005, г. Москва, переулок Аптекарский, дом 11, этаж 1, пом.1, комната 1,
+                www.lorems.ru</p>
+            <p>Производитель: Cevizli Mah. Tugay Yoiu Cad. NUVO Dragos, No.12A/135 34846 MALTEPE/Istanbul,
+                www.firuzeexport.com</p>
+            <p>Все права защищены. LOREMS.RU. Copyright 2019</p>
+        </div>
+    </footer>
+
+    
+
+    <section class="modal">
+        <div class="form">
+        <h4 class="form__title">Напишите нам <span>glavsnab1@inbox.ru</span></h4>
+        <p class="form__desc">или воспользуйтесь формой обратной связи</p>
+        <button class="form__close">Отмена</button>
+        <button class="form__close form__close--mobile"></button>
+        <form action="#" method="post" class="form__container">
+            <label class="form__label"><input type="text" class="form__input" placeholder="Имя*" required></label>
+            <label class="form__label"><input type="text" class="form__input" placeholder="Телефон*" required></label>
+            <label class="form__label"><input type="text" class="form__input" placeholder="Email*" required></label>
+            <label class="form__label"><textarea name="text" id="" cols="30" rows="8" class="form__textarea" placeholder="Сообщение*" required></textarea></label>
+            <input type="submit" class="form__submit" disabled=''>
+            <label class="form__checkbox"><input type="checkbox" id='politics'  value='' autocomplete="off">Согласен на обработку <a href="#">персональных данных</a></label>
+        </form>
+    </div>
+    </section>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

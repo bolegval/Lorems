@@ -1,0 +1,176 @@
+.header {
+  background-color: $main-bg-color;
+  padding: 9px 20px;
+  font-weight: 700;
+  position: relative;
+
+  @media (max-width: 1100px) {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__burger {
+    position: relative;
+    display: none;
+    width: 56px;
+    height: 56px;
+    background-color: #e8e8e8;
+
+    & span {
+      display: block;
+      height: 3px;
+      width: 20px;
+      background-color: #000000;
+      margin: 0 auto;
+      transition: all 0.2s ease-in;
+
+      &:first-of-type {
+        margin-top: 20px;
+      }
+
+      &:nth-child(2) {
+        margin: 4px auto;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      display: block;
+    }
+
+    &--close span {
+      position: absolute;
+      left: 28%;
+      top: 50%;
+      transition: all 0.5s ease-in;
+
+      &:first-of-type {
+        transform: rotate(-45deg);
+        margin: 0;
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:last-of-type {
+        transform: rotate(45deg);
+        margin: 0;
+      }
+    }
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 17px;
+
+    @media (max-width: 1100px) {
+      padding: 0 10px 0;
+    }
+  }
+
+  &__logo {
+    margin-right: 56px;
+
+    @media (max-width: 1100px) {
+      height: 36px;
+      margin: 0 auto;
+    }
+    & img {
+      height: 100%;
+    }
+  }
+
+  &__contacts {
+    @media (max-width: 1100px) {
+      display: none;
+    }
+  }
+
+  &__button {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    background: url("../img/shopping-cart.png") center no-repeat;
+  }
+}
+
+.nav {
+  @media (max-width: 1100px) {
+    visibility: hidden;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all 2s;
+  }
+  //для nav
+  &--mobile {
+    /* display: block; */
+    visibility: visible;
+    transform: translateX(0);
+    transition: transform 2s;
+  }
+}
+
+.menu {
+  display: flex;
+  font-size: 16px;
+
+  &__item {
+    display: inline-block;
+    margin-right: 52px;
+  }
+
+  &__link:hover {
+    color: $form-color;
+  }
+  // для меню
+  &--mobile {
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      margin: 60px 0 0 40px;
+
+      & li {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.contacts {
+  & a {
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  &__instagram {
+    width: 16px;
+    height: 16px;
+    background: url("../img/instagram-logo.svg") center no-repeat;
+    margin-right: 7px;
+  }
+
+  &__mail {
+    width: 24px;
+    height: 16px;
+    background: url("../img/mail-icon.png") center no-repeat;
+    margin-right: 56px;
+  }
+}
+// Для контактов
+.vissible {
+  display: block;
+  width: 100%;
+  text-align: end;
+}
+// Для логотипа и корзины
+.hidden {
+  display: none;
+}

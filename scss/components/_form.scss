@@ -1,0 +1,162 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(158, 164, 157, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+
+  &--vissible {
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease-in-out;
+  }
+
+  @media (max-width: 450px) {
+    height: auto;
+  }
+}
+
+.form {
+  width: 630px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px 18px;
+  font-weight: 700;
+  position: relative;
+  background-color: $secondary-bg-color;
+
+  @media (max-width: 786px) {
+    max-width: 450px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  @media (max-width: 450px) {
+    width: auto;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 18px;
+
+    @media (max-width: 786px) {
+     padding: 0 10px;
+    }
+
+    & span {
+      color: $form-color;
+
+      
+    }
+  }
+
+  &__desc {
+    font-size: 18px;
+    margin-bottom: 30px;
+
+    @media (max-width: 786px) {
+      border-bottom: $bottom-line;
+      padding:0 40px 20px;
+    }
+
+    @media (max-width: 450px) {
+      
+      padding:0 20px 20px;
+    }
+  }
+
+  &__close {
+    font-size: 14px;
+    font-weight: 400;
+    color: #aeaeae;
+    position: absolute;
+    top: 35px;
+    right: 30px;
+
+    @media (max-width: 786px) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+      width: 16px;
+      height: 12px;
+      background-image: url("../img/close-form.png");
+      position: absolute;
+      top: 27px;
+      left: 10px;
+
+      @media (max-width: 786px) {
+        display: block;
+      }
+    }
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 786px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__label {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+
+    &::placeholder {
+      @include placeholder;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    resize: none;
+
+    &::placeholder {
+      @include placeholder;
+      font-family: "Proxima Nova";
+    }
+  }
+
+  &__submit {
+    @include form-button;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 24px 15px 26px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+  }
+
+  &__checkbox {
+    font-weight: 400;
+    font-size: 14px;
+    color: #aeaeae;
+
+    & a {
+      color: #6f6f6f;
+    }
+  }
+}
